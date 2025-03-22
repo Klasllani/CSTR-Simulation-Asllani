@@ -1,7 +1,6 @@
 # Simple simulation of a first order Continuous Stirred Tank Reactor (CSTR)
 - Includes response to various types of input concentation stimuli (step changes, ramp inputs, sinusoidal inputs, etc.)
 - Incorporation of PID controller to maintain exit concentration set point 
-- Laplace transformation used for transfer function to simulate the closed-loop response of the reactor
 - Uses Ziegler-Nichols heuristic tuning method
 
 ## System Description

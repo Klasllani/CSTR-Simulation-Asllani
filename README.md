@@ -75,6 +75,12 @@ When running the simulation with default parameters, an astute user will notice 
 + Adjust PID control parameters
   - Increasing ultimate gain (Ku) for stronger control response, adjusting ultimate period (Tu) to match the system’s dynamics
   - Consider cascade control using temperature as secondary controlled variable and/or feed-forward control to handle inlet concentration disturbances
++ Misc real life aspects such as upgrading the impeller or altering physical reactor geometry 
+
+#### For a high conversion, I applied above bulleted concepts, resulting in:
+ ```sh
+python main.py --V 2.0 --F 0.8 --k 0.15 --Ku 3.0 --Tu 15.0 --c_ref 0.9 --pulse_start 25
+   ```
 
 #### Project Reference
 Coughanower, D. R.; Koppel, L. B. *Process Systems Analysis and Control*; McGraw-Hill Chemical Engineering Series, McGraw-Hill Companies: New York, 1964; pp 123–124.

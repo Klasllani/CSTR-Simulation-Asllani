@@ -80,8 +80,9 @@ When running the simulation with default parameters, an astute user will notice 
  ```sh
 python main.py --V 2.0 --F 0.8 --k 0.15 --Ku 3.0 --Tu 15.0 --c_ref 0.9 --pulse_start 25
    ```
+<br>
 
-#### Project Reference
+#### Comprehensive Reference
 Coughanower, D. R.; Koppel, L. B. *Process Systems Analysis and Control*; McGraw-Hill Chemical Engineering Series, McGraw-Hill Companies: New York, 1964; pp 123–124.
 
 <br>

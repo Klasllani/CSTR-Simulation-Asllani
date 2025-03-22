@@ -60,8 +60,23 @@ python main.py --V 2.0 --F 0.8 --k 0.15 --Ku 3.0 --Tu 15.0 --c_ref 0.9 --pulse_s
 * **--noise_mean**: Mean of random noise, default=0
 * **--noise_std**: Standard deviation of random noise, default=1
 
-##
-#### Reference
+## Maximizing Conversion (X<sub>a</sub>):
+When running the simulation with default parameters, an astute user will notice lackluster conversion of A to B. 
+
+#### To increase X<sub>a</sub>, refer to **above formula section**, and you can see that:
++ Increasing reactor volume, increases residence time and thus conversion
++ Decreasing flow rate, increases residence time and thus conversion
++ Increase reaction rate constant, increases conversion. In the real world, this can be done in several ways, depending on the process:
+  - Changing temperature (look at the Arrhenius equation)
+  - Introducing a castalyst to lower activation energy (again, Arrhenius equation)
+  - pH Control (for acid/base-catalyzed reactions)
+  - Pressure effects with Le Chatelier's principle
++ Set c_ref lower to lower exit concentration of A
++ Adjust PID control parameters
+  - Increasing ultimate gain (Ku) for stronger control response, adjusting ultimate period (Tu) to match the system’s dynamics
+  - Consider cascade control using temperature as secondary controlled variable and/or feed-forward control to handle inlet concentration disturbances
+
+#### Project Reference
 Coughanower, D. R.; Koppel, L. B. *Process Systems Analysis and Control*; McGraw-Hill Chemical Engineering Series, McGraw-Hill Companies: New York, 1964; pp 123–124.
 
 <br>

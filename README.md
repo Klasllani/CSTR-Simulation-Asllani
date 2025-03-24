@@ -74,7 +74,7 @@ When running the simulation with default parameters, an astute user will notice 
   - Set c_ref to a lower value to lower set point exit concentration of A
   - Increasing ultimate gain (Ku) for stronger control response, adjusting ultimate period (Tu) to match the system’s dynamics
   - Consider cascade control using temperature as secondary controlled variable and/or feed-forward control to handle inlet concentration disturbances
-+ Misc real life aspects such as upgrading the impeller or altering physical reactor geometry 
++ Miscellaneous enhancements such as upgrading the impeller or altering the reactor geometry 
 
 #### For a high conversion, I applied above bulleted concepts, resulting in:
  ```sh

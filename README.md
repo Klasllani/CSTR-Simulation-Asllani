@@ -70,8 +70,8 @@ When running the simulation with default parameters, an astute user will notice 
   - Introducing a castalyst to lower activation energy (again, Arrhenius equation)
   - pH Control (for acid/base-catalyzed reactions)
   - Pressure effects (Le Chatelier's principle)
-+ Set c_ref lower to lower exit concentration of A
 + Adjust PID control parameters
+  - Set c_ref to a lower value to lower set point exit concentration of A
   - Increasing ultimate gain (Ku) for stronger control response, adjusting ultimate period (Tu) to match the system’s dynamics
   - Consider cascade control using temperature as secondary controlled variable and/or feed-forward control to handle inlet concentration disturbances
 + Misc real life aspects such as upgrading the impeller or altering physical reactor geometry 
@@ -84,5 +84,3 @@ python main.py --V 2.0 --F 0.8 --k 0.15 --Ku 3.0 --Tu 15.0 --c_ref 0.9 --pulse_s
 
 #### Reference
 Coughanower, D. R.; Koppel, L. B. *Process Systems Analysis and Control*; McGraw-Hill Chemical Engineering Series, McGraw-Hill Companies: New York, 1964; pp 123–124.
-
-<br>

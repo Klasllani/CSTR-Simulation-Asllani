@@ -44,7 +44,7 @@ To change system parameters, the following is an example:
 python main.py --V 2.0 --F 0.8 --k 0.15 --Ku 3.0 --Tu 15.0 --c_ref 0.9 --pulse_start 25
    ```
 
-**FYI**: If the user doesn’t provide any specific system inputs when running the script, the default parameters defined in the argparse setup will be used. The are defined in the next section.
+**FYI**: If the user doesn’t provide any specific system inputs when running the script, the default parameters defined in the argparse setup will be used. They are defined below, in the next section.
 
 ### Default Parameters:
 

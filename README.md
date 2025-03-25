@@ -68,7 +68,7 @@ When running the simulation with default parameters, an astute user will notice 
 + Increasing the reaction rate constant, increases conversion. In the real world, this can be done in several ways, depending on the process:
   - Changing temperature (look at the Arrhenius equation)
   - Introducing a castalyst to lower activation energy (again, Arrhenius equation)
-  - pH Control (for acid/base-catalyzed reactions)
+  - pH Control (for acid/base producing reactions, enzyme cayalysis, fermentation, etc.)
   - Pressure effects (Le Chatelier's principle)
 + Adjust PID control parameters
   - Set c_ref to a lower value to lower set point exit concentration of A

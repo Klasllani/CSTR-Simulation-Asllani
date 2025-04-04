@@ -24,15 +24,10 @@ where:
 
 ### 1. Preliminaries
 
-**Ensure** all required Python packages are installed:
-```sh
-pip install numpy matplotlib scipy control
-   ```
+Ensure all required Python libraries are installed (numpy, matplotlib, scipy, control) and cd to the project directory.
 
-**Navigate** to the project directory:
- ```sh
-cd [project-directory]
-   ```
+<br>
+
 ### 2. Running
 **Execute the simulation** using the main script:
  ```sh

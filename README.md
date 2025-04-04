@@ -34,11 +34,12 @@ pip install numpy matplotlib scipy control
 cd [project-directory]
    ```
 ### 2. Running
-**Execute the simulation** using the main script*:
+**Execute the simulation** using the main script:
  ```sh
 python3 main.py
    ```
-*This command works for Unix-based operating systems (Linux or macOS). For Windows: use python instead of python3.
++ This command works for **Unix-based** operating systems (Linux, macOS, etc.)
++ For Windows: use python instead of python3
 
 <br>
 

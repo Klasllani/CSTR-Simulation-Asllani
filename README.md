@@ -34,14 +34,17 @@ pip install numpy matplotlib scipy control
 cd [project-directory]
    ```
 ### 2. Running
-**Execute the simulation** using the main script:
+**Execute the simulation** using the main script*:
  ```sh
-python main.py
+python3 main.py
    ```
+*This command works for Unix-based operating systems (Linux or macOS). For Windows: use python instead of python3.
+
+<br>
 
 To change system parameters, the following is an example:
  ```sh
-python main.py --V 2.0 --F 0.8 --k 0.15 --Ku 3.0 --Tu 15.0 --c_ref 0.9 --pulse_start 25
+python3 main.py --V 2.0 --F 0.8 --k 0.15 --Ku 3.0 --Tu 15.0 --c_ref 0.9 --pulse_start 25
    ```
 
 **FYI**: If the user doesn’t provide any specific system inputs when running the script, the default parameters defined in the argparse setup will be used. They are defined below, in the next section.
@@ -76,11 +79,7 @@ When running the simulation with default parameters, an astute user will notice 
   - Consider cascade control using temperature as secondary controlled variable and/or feed-forward control to handle inlet concentration disturbances
 + Miscellaneous enhancements such as upgrading the impeller or altering the reactor geometry 
 
-#### For a high conversion, I applied above bulleted concepts, resulting in:
- ```sh
-python main.py --V 2.0 --F 0.8 --k 0.15 --Ku 3.0 --Tu 15.0 --c_ref 0.9 --pulse_start 25
-   ```
 <br>
 
-#### Reference
+#### Overall Reference:
 Coughanower, D. R.; Koppel, L. B. *Process Systems Analysis and Control*; McGraw-Hill Chemical Engineering Series, McGraw-Hill Companies: New York, 1964; pp 123–124.
